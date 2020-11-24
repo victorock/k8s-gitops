@@ -6,11 +6,11 @@ Folder Structure:
         - awx-operator.yml  
           `-> Control-Plane Execution Environment
         - awx-resource-operator.yml  
-          `-> Control-plane Configuration
+          `-> Control-plane Configuration  
         - argocd-operator.yml  
-          `-> Control-Plane Configuration Policy
+          `-> Control-Plane Configuration Policy  
         - gitea-operator.yml  
-          `-> Control-Plane Configuration Store
+          `-> Control-Plane Configuration Store  
 
 - ansible-data
     - deploy

@@ -3,11 +3,14 @@ GitOps of K8S resources.
 Folder Structure:
 
 - ansible-control
-    - deploy
         - awx-operator.yml  
-          `-> Control-Plane
+          `-> Control-Plane Execution Environment
         - awx-resource-operator.yml  
           `-> Control-plane Configuration
+        - argocd-operator.yml  
+          `-> Control-Plane Configuration Policy
+        - gitea-operator.yml  
+          `-> Control-Plane Configuration Store
 
 - ansible-data
     - deploy

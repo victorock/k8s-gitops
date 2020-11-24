@@ -1,0 +1,13 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: Module
+metadata:
+  name: "DEMO.team.devops"
+  namespace: ansible-tower
+spec:
+  tower_auth_secret: "tower.victorock.io"
+  name: "tower_team"
+  parameters:
+    name: "devops"
+    description: "devops Team"
+    organization: "DEMO"

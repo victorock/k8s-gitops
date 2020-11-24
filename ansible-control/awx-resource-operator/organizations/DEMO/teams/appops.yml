@@ -8,6 +8,7 @@ spec:
   tower_auth_secret: "tower.victorock.io"
   name: "tower_team"
   parameters:
+    organization: "DEMO"
     name: "appops"
     description: "appops Team"
     organization: "DEMO"

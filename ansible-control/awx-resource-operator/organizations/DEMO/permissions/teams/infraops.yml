@@ -8,6 +8,21 @@ spec:
   tower_auth_secret: "tower.victorock.io"
   name: "tower_role"
   parameters:
+    organization: "DEMO"
     team: "infraops"
     role: "admin"
+    target_team: "infraops"
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: Module
+metadata:
+  name: "DEMO.permission.team.infraops.member.infraops"
+  namespace: ansible-tower
+spec:
+  tower_auth_secret: "tower.victorock.io"
+  name: "tower_role"
+  parameters:
+    organization: "DEMO"
+    user: "infraops"
+    role: "member"
     target_team: "infraops"

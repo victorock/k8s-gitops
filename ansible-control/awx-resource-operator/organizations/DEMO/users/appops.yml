@@ -8,6 +8,21 @@ spec:
   tower_auth_secret: "tower.victorock.io"
   name: "tower_user"
   parameters:
+    organization: "DEMO"
     name: "appops"
     superuser: true
     auditor: false
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: Module
+metadata:
+  name: "DEMO.permission.team.appops.member.appops"
+  namespace: ansible-tower
+spec:
+  tower_auth_secret: "tower.victorock.io"
+  name: "tower_role"
+  parameters:
+    organization: "DEMO"
+    user: "appops"
+    role: "member"
+    target_team: "appops"

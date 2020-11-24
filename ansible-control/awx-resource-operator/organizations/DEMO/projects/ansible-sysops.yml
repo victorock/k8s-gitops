@@ -8,6 +8,7 @@ spec:
   tower_auth_secret: "tower.victorock.io"
   name: "tower_project"
   parameters:
+    organization: "DEMO"
     name: "ansible-sysops"
     description: "Dev: victorock-ansible-sysops"
     scm_credential: "empty-scm"

@@ -1,0 +1,1 @@
+GitOps of K8S resources.

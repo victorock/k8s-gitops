@@ -2,6 +2,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: Module
 metadata:
+  # yamllint disable-line rule:line-length
   name: "organization:demo:permission:admin:inventory:sysops:team:sysops"
   namespace: ansible-tower
 spec:
@@ -12,5 +13,3 @@ spec:
     role: "admin"
     inventory: "sysops"
     team: "sysops"
-
-

@@ -2,7 +2,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: Module
 metadata:
-  name: "DEMO.permission.team.infraops"
+  name: "organization-DEMO.permission-admin.team-infraops"
   namespace: ansible-tower
 spec:
   tower_auth_secret: "tower.victorock.io"
@@ -16,7 +16,7 @@ spec:
 apiVersion: tower.ansible.com/v1alpha1
 kind: Module
 metadata:
-  name: "DEMO.permission.team.infraops.member.infraops"
+  name: "organization-DEMO.permission-member.team-infraops"
   namespace: ansible-tower
 spec:
   tower_auth_secret: "tower.victorock.io"

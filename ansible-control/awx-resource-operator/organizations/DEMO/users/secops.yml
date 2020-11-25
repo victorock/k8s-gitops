@@ -2,14 +2,14 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: Module
 metadata:
-  name: "DEMO.user.netops"
+  name: "DEMO.user.secops"
   namespace: ansible-tower
 spec:
   tower_auth_secret: "tower.victorock.io"
   name: "tower_user"
   parameters:
     organization: "DEMO"
-    name: "netops"
-    password: "changeme"
+    name: "secops"
+    password: "secops"
     superuser: false
-    auditor: false
+    auditor: true

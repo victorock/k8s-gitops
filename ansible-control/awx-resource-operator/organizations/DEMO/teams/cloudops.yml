@@ -11,4 +11,17 @@ spec:
     organization: "DEMO"
     name: "cloudops"
     description: "cloudops Team"
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: Module
+metadata:
+  name: "DEMO.permission.team.cloudops"
+  namespace: ansible-tower
+spec:
+  tower_auth_secret: "tower.victorock.io"
+  name: "tower_role"
+  parameters:
     organization: "DEMO"
+    team: "cloudops"
+    role: "admin"
+    target_team: "cloudops"

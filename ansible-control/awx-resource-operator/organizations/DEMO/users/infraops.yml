@@ -10,5 +10,6 @@ spec:
   parameters:
     organization: "DEMO"
     name: "infraops"
+    password: "changeme"
     superuser: true
     auditor: false

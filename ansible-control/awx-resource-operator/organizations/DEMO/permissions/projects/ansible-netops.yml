@@ -2,13 +2,8 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: Module
 metadata:
-  name: "DEMO.permission.project.ansible-netops.team.netops.role.admin"
+  name: "organization-DEMO.permission-admin.project-ansible-netops.team-netops"
   namespace: ansible-tower
-  labels:
-    organization: "DEMO"
-    project: "ansible-netops"
-    role: "admin"
-    team: "netops"
 spec:
   tower_auth_secret: "tower.victorock.io"
   name: "tower_role"

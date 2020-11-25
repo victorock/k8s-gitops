@@ -10,5 +10,6 @@ spec:
   parameters:
     organization: "DEMO"
     name: "sysops"
-    superuser: true
+    password: "changeme"
+    superuser: false
     auditor: false

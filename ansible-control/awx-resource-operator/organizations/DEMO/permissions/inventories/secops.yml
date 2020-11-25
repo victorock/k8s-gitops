@@ -2,12 +2,14 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: Module
 metadata:
-  name: "organization:DEMO:team:sysops"
+  name: "organization:demo:permission:admin:inventory:secops:team:secops"
   namespace: ansible-tower
 spec:
   tower_auth_secret: "tower.victorock.io"
-  name: "tower_team"
+  name: "tower_role"
   parameters:
     organization: "DEMO"
-    name: "sysops"
-    description: "sysops Team"
+    role: "admin"
+    inventory: "secops"
+    team: "secops"
+

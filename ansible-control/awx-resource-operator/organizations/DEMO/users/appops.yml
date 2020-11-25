@@ -2,7 +2,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: Module
 metadata:
-  name: "DEMO.user.appops"
+  name: "organization:DEMO:user:appops"
   namespace: ansible-tower
 spec:
   tower_auth_secret: "tower.victorock.io"

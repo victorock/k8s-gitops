@@ -2,7 +2,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: Module
 metadata:
-  name: "DEMO.team.devops"
+  name: "organization:DEMO:team:devops"
   namespace: ansible-tower
 spec:
   tower_auth_secret: "tower.victorock.io"
@@ -11,17 +11,3 @@ spec:
     organization: "DEMO"
     name: "devops"
     description: "devops Team"
-    ---
-apiVersion: tower.ansible.com/v1alpha1
-kind: Module
-metadata:
-  name: "DEMO.permission.team.devops"
-  namespace: ansible-tower
-spec:
-  tower_auth_secret: "tower.victorock.io"
-  name: "tower_role"
-  parameters:
-    organization: "DEMO"
-    team: "devops"
-    role: "admin"
-    target_team: "devops"

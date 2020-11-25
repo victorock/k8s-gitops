@@ -2,21 +2,21 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: Module
 metadata:
-  name: "organization-DEMO.permission-admin.team-sysops"
+  name: "organization:DEMO:permission:admin:team:sysops"
   namespace: ansible-tower
 spec:
   tower_auth_secret: "tower.victorock.io"
   name: "tower_role"
   parameters:
     organization: "DEMO"
-    team: "sysops"
     role: "admin"
+    team: "sysops"
     target_team: "sysops"
 ---
 apiVersion: tower.ansible.com/v1alpha1
 kind: Module
 metadata:
-  name: "organization-DEMO.permission-member.team-sysops"
+  name: "organization:DEMO:permission:member:team:sysops"
   namespace: ansible-tower
 spec:
   tower_auth_secret: "tower.victorock.io"

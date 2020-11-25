@@ -2,7 +2,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: Module
 metadata:
-  name: "organization-DEMO.permission-admin.project-ansible-netops.team-devops"
+  name: "organization:DEMO:permission:admin:project:ansible-devops:team:devops"
   namespace: ansible-tower
 spec:
   tower_auth_secret: "tower.victorock.io"

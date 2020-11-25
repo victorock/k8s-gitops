@@ -1,0 +1,14 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: Module
+metadata:
+  name: "organization:DEMO:permission:admin:jobtemplate:nxos-facts:team:netops"
+  namespace: ansible-tower
+spec:
+  tower_auth_secret: "tower.victorock.io"
+  name: "tower_role"
+  parameters:
+    organization: "DEMO"
+    team: "netops"
+    role: "admin"
+    job_template: "nxos-facts"

@@ -1,0 +1,19 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: Module
+metadata:
+  name: "organization:DEMO:jobtemplate:nxos-facts"
+  namespace: "ansible-tower"
+spec:
+  tower_auth_secret: "tower.victorock.io"
+  name: "tower_job_template"
+  parameters:
+    name: "nxos-facts"
+    description: "module:nxos_facts"
+    project: "ansible-netops"
+    playbook: "cisco/nxos/playbooks/facts.yml"
+    inventory: "netops"
+    forks: 50
+    limit: "nxos"
+    machine_credential: "ssh-empty"
+    ask_credential: true

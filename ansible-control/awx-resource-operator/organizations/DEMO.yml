@@ -2,7 +2,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: Module
 metadata:
-  name: "DEMO"
+  name: "organization:DEMO"
   namespace: "ansible-tower"
 spec:
   tower_auth_secret: "tower.victorock.io"

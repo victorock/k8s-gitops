@@ -27,3 +27,9 @@ Folder Structure:
     `-> Telemetry & Alert Management
   - prometheus-exporter-operator.yml  
     `-> Telemetry Collector
+
+
+Kustomize wasn't made to manipulate and template multiples entries of the same objects.  
+YQ is ideal to query and change YAML k/v.  
+jinja2-cli is an option to explore, in order to templatize configurations.  
+Ansible just for templating is overkill.  

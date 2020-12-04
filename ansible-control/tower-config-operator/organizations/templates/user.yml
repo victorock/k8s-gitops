@@ -1,0 +1,13 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: User
+metadata:
+  name: "user"
+  namespace: "ansible-platform"
+  labels:
+    organization: "Default"
+spec:
+  secret: "toweraccess"
+  config:
+    organization: "Default"
+    name: "{{ ansible_operator_meta.name }}"

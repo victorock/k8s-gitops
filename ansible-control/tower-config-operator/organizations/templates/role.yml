@@ -1,0 +1,14 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: Role
+metadata:
+  name: "role"
+  namespace: "ansible-platform"
+  labels:
+    organization: "Default"
+spec:
+  secret: "toweraccess"
+  config:
+    organization: "Default"
+
+

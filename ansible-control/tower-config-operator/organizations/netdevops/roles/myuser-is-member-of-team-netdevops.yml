@@ -1,0 +1,14 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: Role
+metadata:
+  name: myuser-is-member-of-team-netdevops
+  namespace: ansible-platform
+  labels:
+    organization: netdevops
+spec:
+  secret: toweraccess
+  config:
+    organization: netdevops
+    role: member
+    user: netdevops
+    target_team: netdevops

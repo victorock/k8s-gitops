@@ -1,0 +1,16 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: Project
+metadata:
+  name: "project"
+  namespace: "ansible-platform"
+  labels:
+    organization: "Default"
+spec:
+  secret: "toweraccess"
+  config:
+    organization: "Default"
+    name: "{{ ansible_operator_meta.name }}"
+    scm_url: "https://github.com/ansible/ansible-tower-samples"
+    scm_type: "git"
+    scm_update_on_launch: "true"

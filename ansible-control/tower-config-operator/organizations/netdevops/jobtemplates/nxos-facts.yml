@@ -1,0 +1,23 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: JobTemplate
+metadata:
+  name: nxos-facts
+  namespace: ansible-platform
+  labels:
+    organization: netdevops
+spec:
+  secret: toweraccess
+  config:
+    organization: netdevops
+    name: '{{ ansible_operator_meta.name }}'
+    project: netdevops
+    playbook: cisco/nxos/playbooks/facts.yml
+    forks: 50
+    ask_credential_on_launch: 'true'
+    ask_diff_mode_on_launch: 'true'
+    ask_inventory_on_launch: 'true'
+    ask_job_type_on_launch: 'true'
+    ask_limit_on_launch: 'true'
+    ask_scm_branch_on_launch: 'true'
+    ask_variables_on_launch: 'true'
+    ask_verbosity_on_launch: 'true'

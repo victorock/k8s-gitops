@@ -1,0 +1,17 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: Project
+metadata:
+  name: netdevops
+  namespace: ansible-platform
+  labels:
+    organization: netdevops
+spec:
+  secret: toweraccess
+  config:
+    organization: netdevops
+    name: '{{ ansible_operator_meta.name }}'
+    scm_type: git
+    scm_branch: dev
+    scm_clean: 'true'
+    scm_update_on_launch: 'false'
+    scm_url: https://github.com/victorock/netdevops

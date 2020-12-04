@@ -1,0 +1,10 @@
+---
+resources:
+- role.yml
+- inventory.yml
+- organization.yml
+- team.yml
+- user.yml
+- project.yml
+- credential.yml
+- jobtemplate.yml

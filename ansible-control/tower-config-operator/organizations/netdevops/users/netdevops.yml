@@ -1,0 +1,14 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: User
+metadata:
+  name: netdevops
+  namespace: ansible-platform
+  labels:
+    organization: netdevops
+    secret: toweraccess
+spec:
+  secret: toweraccess
+  config:
+    organization: netdevops
+    name: '{{ ansible_operator_meta.name }}'
+    password: changeme

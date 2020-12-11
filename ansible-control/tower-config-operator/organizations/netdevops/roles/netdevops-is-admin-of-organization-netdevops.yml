@@ -1,7 +1,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: Role
 metadata:
-  name: team-netdevops-is-admin-of-organization-netdevops
+  name: netdevops-is-admin-of-organization-netdevops
   namespace: ansible-platform
   labels:
     organization: netdevops
@@ -12,4 +12,4 @@ spec:
   config:
     organization: netdevops
     role: admin
-    team: netdevops
+    user: netdevops

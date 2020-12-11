@@ -1,7 +1,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: Role
 metadata:
-  name: netdevops-is-admin-of-organization-netdevops
+  name: team-netdevops-is-admin-of-organization-netdevops
   namespace: ansible-platform
   annotations:
     ansible.sdk.operatorframework.io/reconcile-period: "30s"
@@ -10,4 +10,4 @@ spec:
   config:
     organization: netdevops
     role: admin
-    user: netdevops
+    team: netdevops

@@ -3,8 +3,6 @@ kind: Team
 metadata:
   name: netdevops
   namespace: ansible-platform
-  labels:
-    organization: netdevops
   annotations:
     ansible.sdk.operatorframework.io/reconcile-period: "30s"
 spec:

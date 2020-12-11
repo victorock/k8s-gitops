@@ -5,7 +5,8 @@ metadata:
   namespace: ansible-platform
   labels:
     organization: netdevops
-    secret: toweraccess
+  annotations:
+    ansible.sdk.operatorframework.io/reconcile-period: "30"
 spec:
   secret: toweraccess
   config:

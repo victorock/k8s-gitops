@@ -6,14 +6,14 @@ metadata:
   labels:
     organization: netdevops
   annotations:
-    ansible.sdk.operatorframework.io/reconcile-period: "30"
+    ansible.sdk.operatorframework.io/reconcile-period: "30s"
 spec:
   secret: toweraccess
   config:
     organization: netdevops
     name: '{{ ansible_operator_meta.name }}'
-    scm_type: git
-    scm_branch: dev
+    scm_type: 'git'
+    scm_branch: 'dev'
     scm_clean: 'true'
     scm_update_on_launch: 'false'
-    scm_url: https://github.com/victorock/netdevops
+    scm_url: https://github.com/victorock/ansible-netops

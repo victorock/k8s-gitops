@@ -1,12 +1,12 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: Role
 metadata:
-  name: myuser-is-member-of-team-netdevops
+  name: netdevops-is-member-of-team-netdevops
   namespace: ansible-platform
   labels:
     organization: netdevops
   annotations:
-    ansible.sdk.operatorframework.io/reconcile-period: "30"
+    ansible.sdk.operatorframework.io/reconcile-period: "30s"
 spec:
   secret: toweraccess
   config:

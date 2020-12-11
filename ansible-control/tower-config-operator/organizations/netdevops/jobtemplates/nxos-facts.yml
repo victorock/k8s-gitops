@@ -6,7 +6,7 @@ metadata:
   labels:
     organization: netdevops
   annotations:
-    ansible.sdk.operatorframework.io/reconcile-period: "30"
+    ansible.sdk.operatorframework.io/reconcile-period: "30s"
 spec:
   secret: toweraccess
   config:
@@ -20,6 +20,5 @@ spec:
     ask_inventory_on_launch: 'true'
     ask_job_type_on_launch: 'true'
     ask_limit_on_launch: 'true'
-    ask_scm_branch_on_launch: 'true'
     ask_variables_on_launch: 'true'
     ask_verbosity_on_launch: 'true'
